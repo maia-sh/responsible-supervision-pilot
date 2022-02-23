@@ -1,13 +1,14 @@
+# remotes::install_github("maia-sh/tidypubmed")
+# remotes::install_github("maia-sh/ctregistries")
+
 library(dplyr)
 library(here)
 library(readr)
 library(fs)
-# remotes::install_github("maia-sh/tidypubmed")
 library(tidypubmed)
+library(ctregistries)
 
-# get pubmed
-# check for trn in si and abstract
-
+# Set up data directories
 dir_raw <- dir_create(here("data", "raw"))
 dir_processed <- dir_create(here("data", "processed"))
 
